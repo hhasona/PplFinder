@@ -1,5 +1,6 @@
 {
   "name": "ppl-finder",
+  "homepage": "https://hhasona.github.com/io/ppl-finder",
   "version": "1.0.7",
   "bin": "./bin/cli.js",
   "license": "MIT",
@@ -23,6 +24,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -47,6 +50,7 @@
     ]
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0"
+    "babel-eslint": "^10.1.0",
+    "gh-pages": "^4.0.0"
   }
 }
